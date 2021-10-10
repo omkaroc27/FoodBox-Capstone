@@ -67,12 +67,7 @@ class FoodBoxEcomApplicationTests {
 		productRepo.save(product);
 		assertNotEquals(1420, productRepo.findById(58l).get().getPrice());
 	}
-	@Test
-	@Order(5)
-	public void TestDeleteProduct() {
-		productRepo.deleteById(127l);
-		assertThat(productRepo.existsById(127l)).isFalse();
-	}
+	
 	
 	@Test
 	@Order(1)
@@ -104,12 +99,7 @@ class FoodBoxEcomApplicationTests {
 		categoryrepo.save(cat);
 		assertNotEquals("non-veg-Food", categoryrepo.findById(122).get().getName());
 	}
-	@Test
-	@Order(5)
-	public void TestDeleteCategory() {
-		categoryrepo.deleteById(126);
-		assertThat(categoryrepo.existsById(126)).isFalse();
-	}
+	
 	
 	@Test
 	@Order(6)
