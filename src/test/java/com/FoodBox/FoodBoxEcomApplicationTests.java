@@ -119,7 +119,7 @@ class FoodBoxEcomApplicationTests {
 	void UserProductOrderDataTest() {
 		OrderData od = new OrderData();
 		od.setId(112l);		
-		od.setAddress("Shivaji peth kolhapur");
+		od.setAddress("Shivaji peth rankala kolhapur");
 		od.setCity("kolhapur");
 		od.setEmail("oc@gmail.com");
 		od.setFirstName("omkar");
