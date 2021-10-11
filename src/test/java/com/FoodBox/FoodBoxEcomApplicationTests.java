@@ -88,21 +88,21 @@ class FoodBoxEcomApplicationTests {
 	@Test
 	@Order(3)
 	public void TestSingleCategory() {
-		Category cat=categoryrepo.findById(122).get();
+		Category cat=categoryrepo.findById(227).get();
 		assertEquals("veg-Food", cat.getName());
 	}
 	@Test
 	@Order(4)
 	public void TestUpdateCategory() {
-		Category cat=categoryrepo.findById(122).get();
+		Category cat=categoryrepo.findById(227).get();
 		cat.setName("veg-Food");
 		categoryrepo.save(cat);
-		assertNotEquals("non-veg-Food", categoryrepo.findById(122).get().getName());
+		assertNotEquals("non-veg-Food", categoryrepo.findById(227).get().getName());
 	}
 	
 	
 	@Test
-	@Order(5)
+	@Order(6)
 	void UserTest() {
 		User user = new User();
 		user.setId(144l);
@@ -115,7 +115,7 @@ class FoodBoxEcomApplicationTests {
 	}
 	
 	@Test
-	@Order(6)
+	@Order(7)
 	void UserProductOrderDataTest() {
 		OrderData od = new OrderData();
 		od.setId(112l);		
